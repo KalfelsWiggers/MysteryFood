@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tela-principal</title>
+    <link rel="stylesheet" href="tela-principal.css">
+</head>
+<body>
+    <div class="div-aba_superior">
+        <div class="hollow_space"></div>
+        <div class="name_space">
+            <img src="name.png" width="200px">
+        </div>
+        <div class="buttons_space">
+            <button>Login</button>
+            <button>Criar conta</button>
+        </div>
+        <div class="shopping-cart_space">
+            <img onmouseleave="replaceCart('shoppingcart.png');" onmouseover="replaceCart('shoppingcart-mouse.png');" src="shoppingcart.png" id="cart" width="60px">
+        </div>
+        <div class="profile_space">
+            <img onmouseleave="replaceProfile('profile.png');" onmouseover="replaceProfile('profile-mouse.png');" src="profile.png" id="profile" width="60px">
+        </div>
+        <div class="hollow_space"></div>
+    </div>
+    <div class="div-wholebody">
+        <div class="hollow_space2"></div>
+        <div class="center-body">
+            <div class="phrase_space">
+                <div class="txt">A SURPRESA QUE VOCÊ ESPERA!</div>
+                <div class="sub-txt">Peça agora sua caixa de comida</div>
+            </div>
+            <div class="shipping_body">
+                <div class="shipping">
+                    <input onkeyup="validateCEP();" type="text" class="shipping-input" id="cep" placeholder="Insira seu CEP...">
+                    <button onclick="calculateShipping();"> CALCULAR FRETE </button> 
+                </div>
+                <div class="shipping-value">
+                    <div id="shipping"></div>
+                </div>
+            </div>
+            <div class="button-boxes">
+                <div class="boxes_space">
+                    <a href="" target="_self">
+                        <img onmouseleave="replaceBoxes('boxes.png');" onmouseover="replaceBoxes('boxes-mouse.png');" src="boxes.png" class="box-button" id="boxes" width="200px">
+                    </a>
+                </div>
+                <div class="affiliate_space">
+                    <img onmouseleave="replaceAffiliate('affiliate.png');" onmouseover="replaceAffiliate('affiliate-mouse.png');" src="affiliate.png" class="affiliate-button" id="affiliate" width="200px">
+                </div>
+            </div>  
+        </div>
+        <div class="hollow_space2"></div>
+    </div>
+</body>
+<script src="tela-principal.js"></script>
+</html>
