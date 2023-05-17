@@ -46,38 +46,10 @@ function searchKeyPress(e)
   return true;
 }
 
-var v = document.getElementById("profile");
-function toggleProfileWindow()
+function replaceImg(image, id)
 {
-    if (profilewindow.style.display === "none") 
-    {
-        profilewindow.style.display = "block";
-    } 
-    else 
-    {
-        profilewindow.style.display = "none";
-    }
-}
-function replaceName(image)
-{
-    namejs.src=image;
-}
-function replaceCart(image)
-{
-    cart.src=image;
-}
-
-function replaceProfile(image)
-{
-    profile.src=image;
-}
-function replaceBoxes(image)
-{
-    boxes.src=image;
-}
-function replaceAffiliate(image)
-{
-    affiliate.src=image;
+    meuid = document.getElementById(id)
+    meuid.src=image;
 }
 
 var mtqq = document.getElementById("MTQQ");
@@ -92,5 +64,6 @@ function toggleScreen()
         MTQQ.style.display = "none";
     }
 }
+
 
 

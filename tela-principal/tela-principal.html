@@ -12,7 +12,7 @@
     <div class="div-aba_superior">
         <div class="hollow_space"></div>
         <div class="name_space">
-            <img onmouseleave="replaceName('name.png');" onmouseover="replaceName('name-mouse.png');" src="name.png" id="namejs" width="200px">
+            <img onmouseleave="replaceImg('name.png', 'namejs');" onmouseover="replaceImg('name-mouse.png', 'namejs');" src="name.png" id="namejs" width="200px">
         </div>
         <div class="buttons_space">
             <button>Login</button>
@@ -20,44 +20,40 @@
         </div>
         <div class="cart-profile_space">
             <div class="shopping-cart_space">
-                <img onmouseleave="replaceCart('shoppingcart.png');" onmouseover="replaceCart('shoppingcart-mouse.png');" src="shoppingcart.png" id="cart" width="60px">
+                <img onmouseleave="replaceImg('shoppingcart.png', 'cart');" onmouseover="replaceImg('shoppingcart-mouse.png', 'cart');" src="shoppingcart.png" id="cart" width="60px">
             </div>
-            <div class="profile_space">
-                <img onclick="toggleProfileWindow();" onmouseleave="replaceProfile('profile.png');" onmouseover="replaceProfile('profile-mouse.png')"; src="profile.png" id="profile" width="60px">
-            </div>
+            <div class="dropdown">
+                <span class="profile-space"><img onclick="toggleProfileWindow();" onmouseleave="replaceImg('profile.png', 'profile');" onmouseover="replaceImg('profile-mouse.png', 'profile')"; src="profile.png" id="profile" width="60px"></span>
+                <div class="dropdown-content" id="profile_menu">
+                  <ul class="profile-options">
+                    <li>CONFIGURAÇÕES</li>
+                    <li>PAGAMENTO</li>
+                    <li>AJUDA</li>
+                    <li>SAIR</li>
+                  </ul>
+                </div>
+              </div>
         </div>
         <div class="hollow_space"></div>
     </div>
     <div class="div-wholebody">
         <div class="hollow_space2"></div>
         <div class="center-body">
-            <div class="profilewindow" id="profilewindow">
-                <div class="profile-configs1"><b>PERFIL</b></div>
-                <br>
-                <div class="profile-configs2">CONFIGURAÇÕES</div>
-                <br>
-                <div class="profile-configs2">HISTÓRICO DE PAGAMENTO</div>
-                <br>
-                <div class="profile-configs2">AJUDA</div>
-                <br>
-                <div class="profile-configs3"><u><b>SAIR</b></u></div>
-            </div>
             <div class="phrase_space">
                 <div class="txt">A SURPRESA QUE VOCÊ ESPERA!</div>
                 <div class="sub-txt">Peça agora sua caixa de comida</div>
             </div>
             <br>
             <div class="about-us_space">
-            
             </div>
             <div class="button-boxes">
                 <div class="boxes_space">
                     <a href="" target="_self">
-                        <img onmouseleave="replaceBoxes('boxes.png');" onmouseover="replaceBoxes('boxes-mouse.png');" src="boxes.png" class="box-button" id="boxes" width="250px">
+                        <img onmouseleave="replaceImg('boxes.png', 'boxes');" onmouseover="replaceImg('boxes-mouse.png', 'boxes');" src="boxes.png" class="box-button" id="boxes" width="250px">
                     </a>
                 </div>
                 <div class="affiliate_space">
-                    <img onmouseleave="replaceAffiliate('affiliate.png');" onmouseover="replaceAffiliate('affiliate-mouse.png');" src="affiliate.png" class="affiliate-button" id="affiliate" width="250px">
+                    <img onmouseleave="replaceImg('affiliate.png', 'affiliate');" onmouseover="replaceImg('affiliate-mouse.png', 'affiliate');" src="affiliate.png" class="affiliate-button" id="affiliate" width="250px">
                 </div>
             </div>  
         </div>
