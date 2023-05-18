@@ -123,7 +123,7 @@ body {
 
 .div-wholebody{
     width: 100%;
-    height: 100%;
+    height: auto;
     background-color: rgb(57, 54, 54);
     display: flex;
     flex-direction: row;
@@ -196,7 +196,7 @@ p{
     flex-direction: column;
     justify-content: end;
     align-items: center;
-    margin-bottom: -200px;
+    margin-top: 192px;
 }
 .MTQQ{
     width: 325px;
@@ -264,11 +264,12 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 280px;
+    margin-left: 270px;
     transition: background 1s, ease-in-out .2s;
 }
 .chat-button:hover{
     background-color: rgb(115, 212, 115);
 }
+
   
     

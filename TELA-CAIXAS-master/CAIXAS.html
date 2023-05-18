@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="CAIXAS.css">
+</head>
+<body>
+    <div class="div-aba_superior">
+         <div class="hollow_space"></div>
+         <div class="name_space">
+          <a href="../MYSTERYFOOD/tela-principal.html">
+            <img onmouseleave="replaceName('name.png');" onmouseover="replaceName('name-mouse.png');" src="name.png" id="namejs" width="200px">
+          </a>
+        </div>
+
+        <div class="buttons_space">
+            <button>Login</button>
+            <button>Criar conta</button>
+        </div>
+        <div class="shopping-cart_space">
+            <img onmouseleave="replaceCart('shoppingcart.png');" onmouseover="replaceCart('shoppingcart-mouse.png');" src="shoppingcart.png" id="cart" width="60px">
+        </div>
+
+        
+        <div class="profile_space">
+            <img onmouseleave="replaceProfile('profile.png');" onmouseover="replaceProfile('profile-mouse.png');" src="profile.png" id="profile" width="60px">
+        </div>
+        <div class="hollow_space"></div>
+    </div>
+
+    <div class="div-wholebody">
+
+        <div class="hollow_space2"></div>
+
+      <div class="center-body">
+        <div class="filter"> 
+        <!-- Control buttons -->
+          <button onclick="clickBtn()" class="dropbtn">FILTRO</button>
+          <div id="myDropdown" class="dropdown-content">
+            <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+            <a href="#Filtro1"> Filtro 1 </a>
+            <a href="#Filtro2"> Filtro 2</a>
+          </div>
+      </div>
+
+
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div id="grad">
+
+                  <a href="caixagpequena.html">
+                    <img onmouseleave="replaceBox('caixa.png');" onmouseover="replaceBox('caixa-mouse.png');" src="caixa.png" id="box" width="250px">
+                  </a>
+
+            </div>
+            <div class="description">Caixa Pequena</div>
+          </div>
+          
+          <div class="mySlides fade">
+
+            <div id="grad">
+                  <a href="caixamedia.html">
+                    <img onmouseleave="replaceBox('caixa.png');" onmouseover="replaceBox('caixa-mouse.png');" src="caixa.png" id="box" width="290px">
+                  </a>
+            </div>
+            <div class="description"> Caixa Média</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div id="grad">
+
+                  <a href="caixagrande.html">
+                    <img onmouseleave="replaceBox('caixa.png');" onmouseover="replaceBox('caixa-mouse.png');" src="caixa.png" id="box" width="370px">
+                  </a>
+
+            </div>
+            <div class="description"> Caixa Grande</div>
+          </div>
+
+        
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
+
+      </div>
+
+      <div class="hollow_space2"></div>
+    </div>
+
+</body>
+<script src="CAIXAS.js"></script>
+</html>
