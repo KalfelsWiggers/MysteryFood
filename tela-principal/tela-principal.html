@@ -1,80 +1,146 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>tela-principal</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="tela-principal.css">
-</head>
-<body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js"
+      type="text/javascript"
+    ></script>
+    <link rel="stylesheet" href="tela-principal.css" />
+  </head>
+  <body>
     <div class="div-aba_superior">
-        <div class="hollow_space"></div>
-        <div class="name_space">
-            <img onmouseleave="replaceImg('name.png', 'namejs');" onmouseover="replaceImg('name-mouse.png', 'namejs');" src="name.png" id="namejs" width="200px">
+      <div class="hollow_space"></div>
+      <div class="name_space">
+        <img
+          onmouseleave="replaceImg('name.png', 'namejs');"
+          onmouseover="replaceImg('name-mouse.png', 'namejs');"
+          src="name.png"
+          id="namejs"
+          width="200px"
+        />
+      </div>
+      <div class="buttons_space">
+        <button>Login</button>
+        <button>Criar conta</button>
+      </div>
+      <div class="cart-profile_space">
+        <div class="shopping-cart_space">
+          <img
+            onmouseleave="replaceImg('shoppingcart.png', 'cart');"
+            onmouseover="replaceImg('shoppingcart-mouse.png', 'cart');"
+            src="shoppingcart.png"
+            id="cart"
+            width="60px"
+          />
         </div>
-        <div class="buttons_space">
-            <button>Login</button>
-            <button>Criar conta</button>
+        <div class="dropdown">
+          <span class="profile-space"
+            ><img
+              onclick="toggleProfileWindow();"
+              onmouseleave="replaceImg('profile.png', 'profile');"
+              onmouseover="replaceImg('profile-mouse.png', 'profile')"
+              ;
+              src="profile.png"
+              id="profile"
+              width="60px"
+          /></span>
+          <div class="dropdown-content" id="profile_menu">
+            <div class="windownname"><b>PERFIL</b></div>
+            <ul class="profile-options">
+              <li><a href="#">CONFIGURAÇÕES</a></li>
+              <li><a href="#">AJUDA</a></li>
+              <li>
+                <a href="#" style="color: red"
+                  ><u><b>SAIR</b></u></a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="cart-profile_space">
-            <div class="shopping-cart_space">
-                <img onmouseleave="replaceImg('shoppingcart.png', 'cart');" onmouseover="replaceImg('shoppingcart-mouse.png', 'cart');" src="shoppingcart.png" id="cart" width="60px">
-            </div>
-            <div class="dropdown">
-                <span class="profile-space"><img onclick="toggleProfileWindow();" onmouseleave="replaceImg('profile.png', 'profile');" onmouseover="replaceImg('profile-mouse.png', 'profile')"; src="profile.png" id="profile" width="60px"></span>
-                <div class="dropdown-content" id="profile_menu">
-                  <ul class="profile-options">
-                    <li>CONFIGURAÇÕES</li>
-                    <li>PAGAMENTO</li>
-                    <li>AJUDA</li>
-                    <li>SAIR</li>
-                  </ul>
-                </div>
-              </div>
-        </div>
-        <div class="hollow_space"></div>
+      </div>
+      <div class="hollow_space"></div>
     </div>
     <div class="div-wholebody">
-        <div class="hollow_space2"></div>
-        <div class="center-body">
-            <div class="phrase_space">
-                <div class="txt">A SURPRESA QUE VOCÊ ESPERA!</div>
-                <div class="sub-txt">Peça agora sua caixa de comida</div>
-            </div>
-            <br>
-            <div class="about-us_space">
-            </div>
-            <div class="button-boxes">
-                <div class="boxes_space">
-                    <a href="" target="_self">
-                        <img onmouseleave="replaceImg('boxes.png', 'boxes');" onmouseover="replaceImg('boxes-mouse.png', 'boxes');" src="boxes.png" class="box-button" id="boxes" width="250px">
-                    </a>
-                </div>
-                <div class="affiliate_space">
-                    <img onmouseleave="replaceImg('affiliate.png', 'affiliate');" onmouseover="replaceImg('affiliate-mouse.png', 'affiliate');" src="affiliate.png" class="affiliate-button" id="affiliate" width="250px">
-                </div>
-            </div>  
+      <div class="hollow_space2"></div>
+      <div class="center-body">
+        <div class="phrase_space">
+          <div class="txt">A SURPRESA QUE VOCÊ ESPERA!</div>
+          <div class="sub-txt">Peça agora sua caixa de comida</div>
         </div>
-        <div class="hollow_space2">
-            <div class="MQTT_space">
-                <div class="MTQQ" id="MTQQ">
-                    <div class="window-name"><b>CHAT</b></div>
-                    <div class="mensages_space" id="resposta"></div>
-                    <br>
-                    <div class="input-mensage-send_space">
-                        <input type="text" class="write-mensage" id="mensagem" onkeypress="return searchKeyPress(event)"; placeholder="Escreva aqui sua dúvida...">
-                        <button class="send-mensage_button" id="botao" onclick="Send();"> ➤ </button>
-                    </div>
-                </div>
-                <br>
-                <div onclick="toggleScreen();" class="chat-button">
-                    <img src="chat-button.png" width="30px">
-                </div>
-            </div>
+        <br />
+        <div class="about-us_space">
+          <h2 style="color: #e6852b; font-size: 30px">SOBRE NÓS</h2>
+          <hr />
+          <p>
+            Somos um serviço que disponibiliza comida em caixas misteriosas para
+            pessoas que querem matar a fome e satisfazer a curiosidade.
+          </p>
+          <p>
+            Temos diversas opções para todo tipo de pessoas, assim como: comidas
+            doces, estrangeiras, salgadas e vegetarianas.
+          </p>
+          <p>
+            Com nossa vasta disponibilidade de entrega, estamos ampliando
+            constantemente nosso trabalho em área hoje entregando comida em todo
+            brasil e futuramente expandindo para outros países.
+          </p>
         </div>
+        <div class="button-boxes">
+          <div class="boxes_space">
+            <a href="" target="_self">
+              <img
+                onmouseleave="replaceImg('boxes.png', 'boxes');"
+                onmouseover="replaceImg('boxes-mouse.png', 'boxes');"
+                src="boxes.png"
+                class="box-button"
+                id="boxes"
+                width="250px"
+              />
+            </a>
+          </div>
+          <div class="affiliate_space">
+            <img
+              onmouseleave="replaceImg('affiliate.png', 'affiliate');"
+              onmouseover="replaceImg('affiliate-mouse.png', 'affiliate');"
+              src="affiliate.png"
+              class="affiliate-button"
+              id="affiliate"
+              width="250px"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="hollow_space2">
+        <div class="MQTT_space">
+          <div class="MTQQ" id="MTQQ">
+            <div class="window-name"><b>CHAT</b></div>
+            <div class="mensages_space" id="resposta"></div>
+            <br />
+            <div class="input-mensage-send_space">
+              <input
+                type="text"
+                class="write-mensage"
+                id="mensagem"
+                onkeypress="return searchKeyPress(event)"
+                ;
+                placeholder="Escreva aqui sua dúvida..."
+              />
+              <button class="send-mensage_button" id="botao" onclick="Send();">
+                ➤
+              </button>
+            </div>
+          </div>
+          <br />
+          <div onclick="toggleScreen();" class="chat-button">
+            <img src="chat-button.png" width="30px" />
+          </div>
+        </div>
+      </div>
     </div>
-</body>
-<script src="tela-principal.js"></script>
+  </body>
+  <script src="tela-principal.js"></script>
 </html>
