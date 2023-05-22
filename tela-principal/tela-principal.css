@@ -58,7 +58,15 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    margin-top: 4px;
+}
+#profile, #cart{
+    transition: all .3s ease-in-out;
+}
+#profile:hover{
+    width: 60px;
+}
+#cart:hover{
+    width: 60px;
 }
     .shopping-cart_space{
         width: 95px;
