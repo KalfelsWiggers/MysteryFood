@@ -88,7 +88,7 @@ body {
         z-index: 1;
         margin-left: -47px;
         margin-top: 6px;
-        text-align: left;
+        text-align: center;
       }
       .windownname{
         background-color: #E6852B;
@@ -104,20 +104,6 @@ body {
       @keyframes desce {
         0% {transform: translateY(-10px); opacity: 0;}
         100% {transform: translateY(0px); opacity: 1;}
-      }
-      .profile-options{
-        margin-left: -50px;
-      }
-      .profile-options li{
-        color: white;
-        margin-top: 10px;
-        list-style-type: none;
-      }
-      .profile-options li a{
-        color: white; 
-        font-family: Arial, Helvetica, sans-serif;
-        text-decoration: none;
-        padding-left: 20px;
       }
 
 
@@ -200,11 +186,8 @@ p{
 .MQTT_space{
     width: 360px;
     height: 425px;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
     position: relative;
-    margin-top: 234px;
+    margin-top: 225px;
 }
 .MTQQ{
     width: 325px;
