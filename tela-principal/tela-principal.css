@@ -1,7 +1,9 @@
 body {
     margin: 0;
-    height: 100vh;
-    overflow: hidden;
+    padding: 0;
+    border: 0;
+    height: 100vh auto;
+    box-sizing: border-box;
 }
 .certo{
     background-color: lightgreen;
@@ -109,7 +111,7 @@ body {
 
 .div-wholebody{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: rgb(57, 54, 54);
     display: flex;
     flex-direction: row;
@@ -117,13 +119,13 @@ body {
     align-items: center;
 }
 .hollow_space2{
-    width: 420px;
+    width: 30%;
     height: 100%;
     display: flex;
     justify-content: center;
 }
 .center-body{
-    width: 890px;
+    width: 40%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -137,6 +139,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 30px;
 }
     .txt{
         font-size: 2em;
@@ -149,6 +152,74 @@ body {
         font-family: Arial, Helvetica, sans-serif;
     }
 
+    /* Slideshow container */
+    .slideshow-container {
+      width: 100%;
+      position: relative;
+      margin: auto;
+      padding-top: 20px;
+      overflow: hidden;
+    }
+    
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+    
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: white;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: rgb(113, 112, 112);
+    }
+    
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1s;
+    }
+    
+    @keyframes fade {
+      from {opacity: .5; transform: translateX(-10px)}
+      to {opacity: 1; transform: translateX(0px)}
+    }
 .about-us_space{
     width: 551px;
     height: 220px;
@@ -172,31 +243,38 @@ p{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    margin-bottom: 62px;
 }
 #boxes, #affiliate{
     transition: width .3s ease-in-out;
 }
 #boxes:hover{
-    width: 250px;
+    width: 270px;
 }
 #affiliate:hover{
-    width: 250px;
+    width: 270px;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(39, 34, 34);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.contatos p{
+    display: inline-block;
 }
 .MQTT_space{
-    width: 360px;
-    height: 425px;
+    width: 304px;
+    height: 70px;
     position: relative;
-    margin-top: 225px;
 }
 .MTQQ{
     width: 325px;
     height: 350px;
     background-color: rgb(39, 34, 34);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    bottom: 60px;
+    position: absolute;
     display: none;
     animation: sobe .2s;
 }
