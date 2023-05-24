@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
-    height: 100vh auto;
+    height: auto;
     box-sizing: border-box;
 }
 .certo{
@@ -259,15 +259,37 @@ footer{
     background-color: rgb(39, 34, 34);
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     align-items: center;
+}
+.contatos{
+    margin-top: 15px;
+}
+.contatos, .MQTT_space{
+    width: 30%;
+}
+.redessociais{
+    width: 26%;
+    margin-top: 5px;
+}
+
+.contatos span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: wheat;
 }
 .contatos p{
     display: inline-block;
+}
+.redessociais img{
+    width: 50px;
+    padding: 5px;
 }
 .MQTT_space{
     width: 304px;
     height: 70px;
     position: relative;
+    margin-bottom: 8px;
 }
 .MTQQ{
     width: 325px;
