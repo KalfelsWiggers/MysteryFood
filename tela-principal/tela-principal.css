@@ -47,6 +47,7 @@ body {
         border: none;
         transition: background 1s, ease-in-out .2s;
         font-size: 15px;
+        cursor: pointer;
     }
     button:hover{
         cursor: pointer;
@@ -121,11 +122,9 @@ body {
 .hollow_space2{
     width: 30%;
     height: 100%;
-    display: flex;
-    justify-content: center;
 }
 .center-body{
-    width: 40%;
+    width: 60%;
     height: 100%;
     display: flex;
     flex-direction: column;

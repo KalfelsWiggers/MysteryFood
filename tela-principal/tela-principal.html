@@ -30,6 +30,7 @@
       <div class="cart-profile_space">
         <div class="shopping-cart_space">
           <img
+            style="cursor: pointer"
             onmouseleave="replaceImg('../img/shoppingcart.png', 'cart');"
             onmouseover="replaceImg('../img/shoppingcart-mouse.png', 'cart');"
             src="../img/shoppingcart.png"
@@ -40,6 +41,7 @@
         <div class="dropdown">
           <span class="profile-space"
             ><img
+              style="cursor: pointer"
               onclick="toggleProfileWindow();"
               onmouseleave="replaceImg('../img/profile.png', 'profile');"
               onmouseover="replaceImg('../img/profile-mouse.png', 'profile')"
@@ -130,10 +132,10 @@
         </span>
       </div>
       <div class="redessociais">
-        <img src="../img/twitter.png" />
-        <img src="../img/facebook.png" />
-        <img src="../img/youtube.png" />
-        <img src="../img/instagram.png" />
+        <a href="*"><img src="../img/twitter.png" /></a>
+        <a href="*"><img src="../img/facebook.png" /></a>
+        <a href="*"><img src="../img/youtube.png" /></a>
+        <a href="*"><img src="../img/instagram.png" /></a>
       </div>
       <div class="MQTT_space">
         <div class="MTQQ" id="MTQQ">
@@ -155,7 +157,11 @@
           </div>
         </div>
         <br />
-        <div onclick="toggleScreen();" class="chat-button">
+        <div
+          onclick="toggleScreen();"
+          class="chat-button"
+          style="cursor: pointer"
+        >
           <img src="../img/chat-button.png" width="30px" />
         </div>
       </div>
