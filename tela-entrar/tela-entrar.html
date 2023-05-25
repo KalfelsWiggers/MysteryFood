@@ -10,6 +10,7 @@
       type="text/javascript"
     ></script>
     <link rel="stylesheet" href="../tela-principal/tela-principal.css" />
+    <link rel="stylesheet" href="tela-entrar.css" />
     <script src="../tela-principal/tela-principal.js"></script>
   </head>
   <body>
@@ -67,5 +68,62 @@
       </div>
       <div class="hollow_space"></div>
     </header>
+
+    <div class="div-wholebody">
+      <div class="hollow_space2"></div>
+      <div class="center-body">
+        <div class="login-space">
+          <h1>Ensira seus dados</h1>
+          <input type="text" placeholder="...Insira seu email" />
+          <input type="password" placeholder="...Insira sua senha" />
+        </div>
+      </div>
+      <div class="hollow_space2"></div>
+    </div>
+
+    <footer>
+      <div class="contatos">
+        <span>
+          <span style="font-size: 20px">Contatos:</span>
+          <br />
+          <p>(47) XXXXX-XXXX</p>
+          <p>faleconosco@mysteryfood.com.br</p>
+        </span>
+      </div>
+      <div class="redessociais">
+        <a href="*"><img src="../img/twitter.png" /></a>
+        <a href="*"><img src="../img/facebook.png" /></a>
+        <a href="*"><img src="../img/youtube.png" /></a>
+        <a href="*"><img src="../img/instagram.png" /></a>
+      </div>
+      <div class="MQTT_space">
+        <div class="MTQQ" id="MTQQ">
+          <div class="window-name"><b>CHAT</b></div>
+          <div class="mensages_space" id="resposta"></div>
+          <br />
+          <div class="input-mensage-send_space">
+            <input
+              type="text"
+              class="write-mensage"
+              id="mensagem"
+              onkeypress="return searchKeyPress(event)"
+              ;
+              placeholder="Escreva aqui sua dúvida..."
+            />
+            <button class="send-mensage_button" id="botao" onclick="Send();">
+              ➤
+            </button>
+          </div>
+        </div>
+        <br />
+        <div
+          onclick="toggleScreen();"
+          class="chat-button"
+          style="cursor: pointer"
+        >
+          <img src="../img/chat-button.png" width="30px" />
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
