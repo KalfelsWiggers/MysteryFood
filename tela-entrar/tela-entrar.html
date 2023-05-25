@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tela-principal</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js"
+      type="text/javascript"
+    ></script>
+    <link rel="stylesheet" href="../tela-principal/tela-principal.css" />
+    <script src="../tela-principal/tela-principal.js"></script>
+  </head>
+  <body>
+    <header class="div-aba_superior">
+      <div class="hollow_space"></div>
+      <div class="name_space">
+        <a href="../tela-principal/tela-principal.html"
+          ><img
+            style="cursor: pointer"
+            onmouseleave="replaceImg('../img/name.png', 'namejs');"
+            onmouseover="replaceImg('../img/name-mouse.png', 'namejs');"
+            src="../img/name.png"
+            id="namejs"
+            width="200px"
+          />
+        </a>
+      </div>
+      <div class="buttons_space">
+        <a href="../tela-principal/tela-principal.html"
+          ><button>Home</button></a
+        >
+        <button>Criar conta</button>
+      </div>
+      <div class="cart-profile_space">
+        <div class="shopping-cart_space">
+          <img
+            style="cursor: pointer"
+            onmouseleave="replaceImg('../img/shoppingcart.png', 'cart');"
+            onmouseover="replaceImg('../img/shoppingcart-mouse.png', 'cart');"
+            src="../img/shoppingcart.png"
+            id="cart"
+            width="60px"
+          />
+        </div>
+        <div class="dropdown">
+          <span class="profile-space"
+            ><img
+              style="cursor: pointer"
+              onclick="toggleProfileWindow();"
+              onmouseleave="replaceImg('../img/profile.png', 'profile');"
+              onmouseover="replaceImg('../img/profile-mouse.png', 'profile')"
+              ;
+              src="../img/profile.png"
+              id="profile"
+              width="60px"
+          /></span>
+          <div class="dropdown-content" id="profile_menu">
+            <div class="windownname"><b>PERFIL</b></div>
+            <p style="color: white; font-size: 16px">
+              Você ainda não possui uma conta!
+            </p>
+            <a href="../tela-entrar/tela-entrar.html"><button>LOGIN</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="hollow_space"></div>
+    </header>
+  </body>
+</html>
