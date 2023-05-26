@@ -27,8 +27,36 @@
         </a>
       </div>
       <div class="buttons_space">
-        <a href="../tela-entrar/tela-entrar.html"><button>Login</button></a>
-        <button>Criar conta</button>
+        <div class="dropdown">
+          <button>Login</button>
+          <div class="dropdown-content" id="profile_menu">
+            <div class="windownname"><b>LOGIN</b></div>
+            <p style="color: white; font-size: 16px">Insira seus dados</p>
+            <input type="text" placeholder="...Insira seu email" />
+            <br /><br />
+            <input type="password" placeholder="...Insira sua senha" />
+            <br /><br />
+            <button class="button2">ENTRAR</button>
+            <br /><br />
+          </div>
+        </div>
+        <div class="dropdown">
+          <button>Criar Conta</button>
+          <div class="dropdown-content" id="profile_menu">
+            <div class="windownname"><b>Criar Conta</b></div>
+            <p style="color: white; font-size: 16px">Insira seus dados</p>
+            <input type="text" placeholder="...Insira um email" />
+            <br /><br />
+            <input type="text" placeholder="...Insira um telefone" />
+            <br /><br />
+            <input type="password" placeholder="...Insira uma senha" />
+            <br /><br />
+            <input type="password" placeholder="...Confirme sua senha" />
+            <br /><br />
+            <button class="button2">ENTRAR</button>
+            <br /><br />
+          </div>
+        </div>
       </div>
       <div class="cart-profile_space">
         <div class="shopping-cart_space">
@@ -58,7 +86,6 @@
             <p style="color: white; font-size: 16px">
               Você ainda não possui uma conta!
             </p>
-            <a href="../tela-entrar/tela-entrar.html"><button>LOGIN</button></a>
           </div>
         </div>
       </div>
@@ -154,9 +181,7 @@
               ;
               placeholder="Escreva aqui sua dúvida..."
             />
-            <button class="send-mensage_button" id="botao" onclick="Send();">
-              ➤
-            </button>
+            <button id="botao" onclick="Send();">➤</button>
           </div>
         </div>
         <br />
