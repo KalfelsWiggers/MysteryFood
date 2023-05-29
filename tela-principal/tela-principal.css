@@ -81,6 +81,21 @@ p{
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
+    }
+    #item-indicator{
+        width: 20px;
+        height: 20px;
+        background: tomato;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 15px;
+        border-radius: 40px;
+        position: absolute;
+        left: 58px;
+        top: 61px;
     }
     .profile_space{
         width: 95px;
