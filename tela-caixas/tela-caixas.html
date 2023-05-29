@@ -13,7 +13,8 @@
       src="https://kit.fontawesome.com/bba71eb6cf.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="tela-principal.css" />
+    <link rel="stylesheet" href="../tela-principal/tela-principal.css" />
+    <link rel="stylesheet" href="tela-caixas.css" />
   </head>
   <body>
     <header class="div-aba_superior">
@@ -95,67 +96,16 @@
       </div>
       <div class="hollow_space"></div>
     </header>
-    <div class="div-wholebody">
-      <div class="hollow_space2"></div>
-      <div class="center-body">
-        <div class="phrase_space">
-          <div class="txt">A SURPRESA QUE VOCÊ ESPERA!</div>
-          <div class="sub-txt">Peça agora sua caixa de comida</div>
-        </div>
-        <!-- Slideshow container -->
-        <div class="slideshow-container">
-          <!-- Full-width images with number and caption text -->
-          <div class="mySlides fade">
-            <img src="../img/img1.png" style="width: 100%" />
-          </div>
-
-          <div class="mySlides fade">
-            <img src="../img/img2.png" style="width: 100%" />
-          </div>
-
-          <div class="mySlides fade">
-            <img src="../img/img3.png" style="width: 100%" />
-          </div>
-
-          <!-- Next and previous buttons -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br />
-
-        <!-- The dots/circles -->
-        <div class="dots">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-        <br />
-
-        <div class="button-boxes">
-          <div class="boxes_space">
-            <a href="../tela-caixas/tela-caixas.html" target="_self">
-              <img
-                onmouseleave="replaceImg('../img/boxes.png', 'boxes');"
-                onmouseover="replaceImg('../img/boxes-mouse.png', 'boxes');"
-                src="../img/boxes.png"
-                id="boxes"
-                width="260px"
-              />
-            </a>
-          </div>
-          <div class="affiliate_space">
-            <img
-              onmouseleave="replaceImg('../img/affiliate.png', 'affiliate');"
-              onmouseover="replaceImg('../img/affiliate-mouse.png', 'affiliate');"
-              src="../img/affiliate.png"
-              id="affiliate"
-              width="260px"
-            />
-          </div>
-        </div>
+    <nav>
+      <div class="box-container">
+        <div class="cells"><i class="fa-solid fa-box-open"></i></div>
+        <div class="cells"><i class="fa-solid fa-box-open"></i></div>
+        <div class="cells"><i class="fa-solid fa-box-open"></i></div>
+        <div class="cells"><i class="fa-solid fa-box-open"></i></div>
+        <div class="cells"><i class="fa-solid fa-box-open"></i></div>
+        <div class="cells"><i class="fa-solid fa-box-open"></i></div>
       </div>
-      <div class="hollow_space2"></div>
-    </div>
+    </nav>
     <footer>
       <div class="contatos">
         <span>
@@ -199,5 +149,5 @@
       </div>
     </footer>
   </body>
-  <script src="tela-principal.js"></script>
+  <script src="../tela-principal/tela-principal.js"></script>
 </html>

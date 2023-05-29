@@ -1,0 +1,27 @@
+nav{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+.box-container{
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin: auto;
+}
+.cells{
+    background: gray;
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    text-align: center;
+}
+.fa-box-open{
+    margin-top: 30px;
+    width: 50px;
+}
+footer{
+    position:absolute;
+    bottom: 0;
+}
