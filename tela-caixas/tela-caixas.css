@@ -1,21 +1,28 @@
+
 nav{
     display: grid;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: auto;
 }
 .box-container{
-    width: 300px;
+    width: auto;
     display: grid;
     grid-template-columns: repeat(3, auto);
-    margin: auto;
+  
 }
 .cells{
-    background: gray;
-    width: 100px;
-    height: 100px;
-    border: 1px solid;
+    margin: 15px;
+    background: var(--cor-primaria);
+    width: 200px;
+    height: 200px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.cells img{
+    width: 130px;
+    margin: auto;
 }
 .fa-box-open{
     margin-top: 30px;

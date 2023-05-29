@@ -93,3 +93,17 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+  function SOMAR() {
+    // Obtém o elemento com o valor atual
+    var valorElemento = document.getElementById("item-indicator");
+
+    // Obtém o valor atual e converte para número
+    var valorAtual = parseInt(valorElemento.innerText);
+
+    // Incrementa o valor
+    var novoValor = valorAtual + 1;
+
+    // Atualiza o valor no elemento HTML
+    valorElemento.innerText = novoValor;
+  }
